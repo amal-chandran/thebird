@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Paper, Avatar } from "material-ui";
+import { Grid, Paper, Avatar, Typography } from "material-ui";
 
 import {
     StaticPaper, Anchor,

@@ -32,7 +32,7 @@ export default withStyles(styles)((props) => {
                 label: props.classes.label, // className, e.g. `OverridesClasses-label-X`
             }}
         >
-            {props.children ? props.children : 'classes'}
+            {props.children ? props.children : ''}
         </Button>
     );
 });

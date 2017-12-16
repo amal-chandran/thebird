@@ -6,7 +6,7 @@ import {
 } from "material-ui";
 
 import {
-    StaticPaper, Anchor, RoundButton,
+    StaticPaper, Anchor, RoundButton2,
     CenterMe, IconTwitter, DotSpacer
 } from "./../CustomComponent";
 
@@ -105,7 +105,7 @@ const FollowListItem = (props) => (
 
             </div>
         } secondary={
-            <RoundButton>Follow</RoundButton>
+            <RoundButton2>Follow</RoundButton2>
         } />
     </ListItem>
 );

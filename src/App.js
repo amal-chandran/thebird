@@ -1,14 +1,16 @@
 import React from "react";
 import { MuiThemeProvider, createMuiTheme } from "material-ui/styles";
-import { blue } from 'material-ui/colors';
+import { blue ,blueGrey} from 'material-ui/colors';
 import green from "material-ui/colors/green";
 
 import { Header } from "./Component/Layout";
 import { HomePage } from "./Component/Pages";
 
+console.log(blueGrey);
 let theme = createMuiTheme({
     palette: {
-        primary: green
+        primary: blue,
+        sub:blueGrey
     },
     typography: {
         fontFamily: "sans-serif",

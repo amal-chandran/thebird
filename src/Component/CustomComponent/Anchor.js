@@ -2,13 +2,14 @@ import React from 'react';
 import Interactive from "react-interactive";
 
 import color from "./../../data/color";
+import withTheme from 'material-ui/styles/withTheme';
 
-export default (props) => {
+export default withTheme()((props) => {
     let { style, normal,
         hover, subColor, subFont,
         boldThick, colorHover, normalFloat,
         lowFont, mainColor, spanProp, noLink,
-        preText, ...Other } = props;
+        preText, theme, ...Other } = props;
 
 
     const styles = {
@@ -38,8 +39,8 @@ export default (props) => {
     styles.styleDefault['fontSize'] = (subFont) ? '13px' : styles.styleDefault['fontSize'];
     styles.styleDefault['fontSize'] = (lowFont) ? '12px' : styles.styleDefault['fontSize'];
 
-    styles.styleDefault['color'] = (mainColor) ? color.mainColor : styles.styleDefault['color'];
-    styles.styleDefault['color'] = (subColor) ? color.subColor : styles.styleDefault['color'];
+    styles.styleDefault['color'] = (mainColor) ? theme.palette.primary['500'] : styles.styleDefault['color'];
+    styles.styleDefault['color'] = (subColor) ? theme.palette.sub['500'] : styles.styleDefault['color'];
 
     if (noLink) {
         Other = Object.assign({}, Other, { as: 'span' });
@@ -59,4 +60,4 @@ export default (props) => {
         </span >
     );
 
-};
+});
