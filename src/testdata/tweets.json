@@ -1,0 +1,29 @@
+[
+    {
+        "id": "HasuraHQ",
+        "name": "Hasura‏",
+        "image": "./img/User2.jpg",
+        "content": "Arpit, our community manager, has a pretty inspiring story of how he landed a job without a CV or an interview. https://blog.hasura.io/show-dont-tell-how-i-landed-a-job-at-a-tech-startup-without-a-cv-bc06b1b54229 #startup #jobs #ThursdayThoughts #thursdaymotivation #makeyourownlane",
+        "images": [
+            "./img/tweetimg/1.png"
+        ]
+    },
+    {
+        "id": "HasuraHQ",
+        "name": "Hasura‏",
+        "image": "./img/User2.jpg",
+        "images": [
+            "./img/tweetimg/2.png"
+        ],
+        "content": "Deploy our nodejs-express quickstart in 3 steps to have the nodejs app running on your cluster  👉 https://hasura.io/hub/project/hasura/hello-nodejs-express #NodeJS #express #appdev #webdev"
+    },
+    {
+        "id": "Visual Studio",
+        "name": "VisualStudio",
+        "image": "./img/User3.jpg",
+        "images": [
+            "./img/tweetimg/3.png"
+        ],
+        "content": "#Dev, explore intermediate #ASPdotnetcore concepts & skills with @ladynaggaga, @shanselman, @csharpfritz & @jongalloway http://msft.social/KWDbwA "
+    }
+]

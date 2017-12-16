@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Visual Studio",
+        "id": "VisualStudio",
+        "verified": "true",
+        "url": "./img/VS.jpg"
+    },
+    {
+        "name": "Angular",
+        "id": "angular",
+        "verified": "true",
+        "url": "./img/Angular.jpg"
+    },
+    {
+        "name": "Hasura",
+        "id": "HasuraHQ",
+        "verified": "true",
+        "url": "./img/Hasura.jpg"
+    },
+    {
+        "name": "Microsoft Developer",
+        "id": "msdev",
+        "verified": "true",
+        "url": "./img/Microsoft.jpg"
+    }
+]
