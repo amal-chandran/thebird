@@ -1,12 +1,17 @@
 import React from "react";
-import { List, ListItem, Avatar, ListItemText, Divider, Icon } from "material-ui";
-import StaticPaper from "./StaticPaper";
-import Anchor from './Anchor';
-import DotSpacer from './DotSpacer';
-import CenterMe from "../CenterMe";
-import LinkData from "./../../testdata/links";
-import IconTwitter from "./../CustomComponent/IconTwitter";
+import {
+    List, ListItem, Avatar,
+    ListItemText, Divider, Icon
+} from "material-ui";
 
+
+import {
+    StaticPaper, Anchor,
+    DotSpacer, CenterMe,
+    IconTwitter
+} from "./../CustomComponent";
+
+import LinkData from "./../../testdata/links";
 
 export default (props) => {
     let avatarSize = '50px';

@@ -1,11 +1,18 @@
 import React from "react";
-import { Avatar, IconButton, Icon, CircularProgress, TextField } from "material-ui";
-import StaticPaper from './StaticPaper';
-import Interactive from 'react-interactive';
-import IconTwitter from "./../CustomComponent/IconTwitter";
-import UserData from "./../../testdata/user";
-import RoundButton from "./../CustomComponent/RoundButton";
 
+import {
+    Avatar, IconButton, Icon,
+    CircularProgress, TextField
+} from "material-ui";
+
+import {
+    StaticPaper,
+    IconTwitter,
+    RoundButton
+} from "./../CustomComponent";
+
+import Interactive from 'react-interactive';
+import UserData from "./../../testdata/user";
 
 export default class TweetCreator extends React.Component {
     constructor() {

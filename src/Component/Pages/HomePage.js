@@ -8,8 +8,8 @@ import {
     Follow, LinkBox
 } from "../BodyComponent";
 
-import MaxWContain from "../MaxWContain";
-import StaticPaper from "../BodyComponent/StaticPaper";
+
+import { MaxWContain, StaticPaper } from "./../CustomComponent";
 
 export default class Body extends React.Component {
     render() {

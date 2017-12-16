@@ -3,11 +3,10 @@ import {
     AppBar, Grid
 } from "material-ui";
 
-import TwitterIcon from "./Component/twitter.svg";
-import HTabs from "./Component/HeaderComponents/HeaderTabs";
-import HToolBar from "./Component/HeaderComponents/HeaderToolBar";
-import CenterMe from "./Component/CenterMe";
-import MaxWContain from "./Component/MaxWContain";
+import { CenterMe, MaxWContain } from "./../CustomComponent";
+import { HeaderTabs, HeaderToolBar } from "./../HeaderComponents";
+
+import TwitterIcon from "./../twitter.svg";
 
 class Header extends React.Component {
 
@@ -27,7 +26,7 @@ class Header extends React.Component {
                     <MaxWContain style={{ minWidth: "1190px" }}>
                         <Grid style={{ height: style.height }} justify="space-between" spacing="0" container>
                             <Grid sm={5} item>
-                                <HTabs />
+                                <HeaderTabs />
                             </Grid>
                             <Grid style={{ textAlign: 'center' }} sm={2} item>
                                 <CenterMe>
@@ -35,7 +34,7 @@ class Header extends React.Component {
                                 </CenterMe>
                             </Grid>
                             <Grid style={{ textAlign: 'right' }} sm={5} item>
-                                <HToolBar style={{ height: style.height }} />
+                                <HeaderToolBar style={{ height: style.height }} />
                             </Grid>
                         </Grid>
                     </MaxWContain>

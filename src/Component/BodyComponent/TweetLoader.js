@@ -1,6 +1,7 @@
 import React from "react";
-import TweetsData from "./../../testdata/tweets";
 import Tweet from './Tweet';
+
+import TweetsData from "./../../testdata/tweets";
 
 export default (props) => {
 

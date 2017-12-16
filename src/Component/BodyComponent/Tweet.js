@@ -1,11 +1,13 @@
 import React from "react";
 import { Grid, Avatar, Icon } from "material-ui";
-import StaticPaper from './StaticPaper';
-import Anchor from "./Anchor";
-import CenterMe from "../CenterMe";
+
+import {
+    StaticPaper, Anchor,
+    DotSpacer, CenterMe,
+    IconTwitter
+} from "./../CustomComponent";
+
 import Interactive from 'react-interactive';
-import DotSpacer from "./DotSpacer";
-import IconTwitter from "./../CustomComponent/IconTwitter";
 import reactStringReplace from 'react-string-replace';
 
 export default (props) => {

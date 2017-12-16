@@ -1,5 +1,6 @@
 import React from 'react';
 import Interactive from "react-interactive";
+
 import color from "./../../data/color";
 
 export default (props) => {

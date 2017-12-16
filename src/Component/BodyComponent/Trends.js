@@ -1,8 +1,11 @@
 import React from 'react';
 import { Grid, Paper, Avatar } from "material-ui";
-import StaticPaper from './StaticPaper';
-import Anchor from './Anchor';
-import DotSpacer from "./DotSpacer";
+
+import {
+    StaticPaper, Anchor,
+    DotSpacer
+} from "./../CustomComponent";
+
 import TrendsData from "./../../testdata/trends";
 
 

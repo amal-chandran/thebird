@@ -4,10 +4,9 @@ import {
     Toolbar
 } from "material-ui";
 
-import CLabel from "../CLabel";
-import SearchBox from "../CustomComponent/SearchBox";
 import UserData from "../../testdata/user";
-import RoundButton from "../CustomComponent/RoundButton";
+import { CLabel, SearchBox, RoundButton } from "./../CustomComponent";
+
 
 export default (props) => {
 

@@ -1,8 +1,12 @@
 import React from 'react';
 import { Grid, Paper, Avatar } from "material-ui";
+
+import {
+    Anchor,
+    StaticPaper
+} from "./../CustomComponent";
+
 import Interactive from "react-interactive";
-import StaticPaper from './StaticPaper'
-import Anchor from "./Anchor";
 import UserData from "./../../testdata/user";
 
 export default (props) => {

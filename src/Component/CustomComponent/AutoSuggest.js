@@ -7,7 +7,9 @@ import TextField from 'material-ui/TextField';
 import Paper from 'material-ui/Paper';
 import { MenuItem } from 'material-ui/Menu';
 import { withStyles } from 'material-ui/styles';
-import Anchor from "./Anchor";
+
+import { Anchor } from "./../CustomComponent";
+
 import color from "./../../data/color";
 
 // const suggestions = [
