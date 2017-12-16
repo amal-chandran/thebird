@@ -24,17 +24,12 @@ export default (props) => (
     <StaticPaper {...props}>
         <div style={styles.containter}>
             <div>
-                <span style={styles.h1}>Trends for you</span>
-                <DotSpacer></DotSpacer>
-                <Anchor lowFont mainColor normalFloat>Change</Anchor>
+                <span style={styles.h1}>Related searches</span>
             </div>
 
             {TrendsData.map((data, i) => (
                 <div key={i} style={{ paddingTop: '8px' }}>
-
                     <Anchor boldThick mainColor normalFloat> {data.trendLink}</Anchor>
-
-                    <div style={{ color: '#657786', fontSize: '12px' }}>{data.trendTweets}</div>
                 </div>
             ))}
 

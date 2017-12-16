@@ -35,7 +35,7 @@ export default (props) => {
         }
     };
     return (
-        <StaticPaper notFirst>
+        <StaticPaper {...props}>
             <div style={styles.containter}>
                 <span> © 2017 Twitter  </span>
 

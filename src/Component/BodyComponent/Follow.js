@@ -46,7 +46,7 @@ let styles = {
 };
 
 export default (props) => (
-    <StaticPaper>
+    <StaticPaper {...props}>
         <div style={styles.containter}>
 
             <div>
