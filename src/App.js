@@ -34,7 +34,7 @@ class App extends React.Component {
             <MuiThemeProvider theme={theme}>
                 <div className="App">
                     <Header></Header>
-                    <HomePage></HomePage>
+                    {/* <HomePage></HomePage> */}
                     {/* <RoundButton>Hello</RoundButton> */}
                 </div>
             </MuiThemeProvider>
