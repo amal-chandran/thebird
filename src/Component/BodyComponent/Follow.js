@@ -1,11 +1,11 @@
 import React from "react";
 import { List, ListItem, Avatar, ListItemText, Divider, Icon } from "material-ui";
-import StaticPaper from "./StaticPaper";
-import Anchor from './Anchor';
-import RoundButton from "../HComponents/RoundButton";
-import CenterMe from "../CenterMe";
-import IconTwitter from "./../HComponents/IconTwitter";
-import DotSpacer from "./DotSpacer";
+import StaticPaper from "./../CustomComponent/StaticPaper";
+import Anchor from './../CustomComponent/Anchor';
+import RoundButton from "./../CustomComponent/RoundButton2";
+import CenterMe from "./../CustomComponent/CenterMe";
+import IconTwitter from "./../CustomComponent/IconTwitter";
+import DotSpacer from "./../CustomComponent/DotSpacer";
 import FollowData from "./../../testdata/follow";
 
 let avatarSize = '50px';
@@ -101,7 +101,7 @@ const FollowListItem = (props) => (
 
             </div>
         } secondary={
-            <RoundButton datVal={'Follow'} borderOnly='true'></RoundButton>
+            <RoundButton>Follow</RoundButton>
         } />
     </ListItem>
 );

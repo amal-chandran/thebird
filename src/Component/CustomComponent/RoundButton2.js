@@ -13,7 +13,7 @@ const styles = (theme) => {
             boxShadow: 'none',
             borderRadius: "45px",
             minHeight: '28px',
-            height: '32px',
+            height: '27px',
             padding: '0px',
             fontWeight: "bold",
         },

@@ -1,11 +1,15 @@
 import React from "react";
-import CenterMe from "../CenterMe";
+
+import {
+  Anchor,
+  AutoSuggest,
+  CenterMe,
+  IconTwitter
+} from "./index";
+
 import { Icon } from "material-ui";
-import IconTwitter from "./IconTwitter";
 import Tooltip from "rc-tooltip";
-// import 'rc-tooltip/assets/bootstrap_white.css';
-import Anchor from "./../BodyComponent/Anchor";
-import AutoSuggest from "./AutoSuggest";
+
 const styles = {
   input: {
     background: "none",

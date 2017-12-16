@@ -1,10 +1,10 @@
 import React from "react";
 import { Avatar, IconButton, Icon, CircularProgress, TextField } from "material-ui";
 import StaticPaper from './StaticPaper';
-import RoundButton from '../HComponents/RoundButton';
-import IconTwitter from '../HComponents/IconTwitter';
 import Interactive from 'react-interactive';
+import IconTwitter from "./../CustomComponent/IconTwitter";
 import UserData from "./../../testdata/user";
+import RoundButton from "./../CustomComponent/RoundButton";
 
 
 export default class TweetCreator extends React.Component {
@@ -161,7 +161,7 @@ let ControllPanel = (props) => {
                     </span>
                 </span>
                 <span style={styles.BottomButtons}>
-                    <RoundButton disabled={(props.enable ? false : true)} datVal="Tweet"></RoundButton>
+                    <RoundButton disabled={(props.enable ? false : true)}>Tweet</RoundButton>
                 </span>
             </span>
         </div>

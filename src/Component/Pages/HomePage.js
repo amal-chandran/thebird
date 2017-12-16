@@ -1,14 +1,15 @@
 import React from "react";
-import MaxWContain from "./Component/MaxWContain";
 import { Grid } from "material-ui";
-import UserInfo from "./Component/BodyComponent/UserInfo";
-import Trends from "./Component/BodyComponent/Trends";
-import StaticPaper from "./Component/BodyComponent/StaticPaper";
-import TweetCreator from './Component/BodyComponent/TweetCreator';
-import Tweet from './Component/BodyComponent/Tweet';
-import TweetLoader from './Component/BodyComponent/TweetLoader';
-import Follow from "./Component/BodyComponent/Follow";
-import LinkBox from "./Component/BodyComponent/LinkBox";
+
+import {
+    UserInfo, Trends,
+    TweetCreator,
+    TweetLoader, Tweet,
+    Follow, LinkBox
+} from "../BodyComponent";
+
+import MaxWContain from "../MaxWContain";
+import StaticPaper from "../BodyComponent/StaticPaper";
 
 export default class Body extends React.Component {
     render() {
@@ -18,7 +19,6 @@ export default class Body extends React.Component {
                     <Grid item xs="3">
 
                         <UserInfo />
-                        {/* <RoundButton>Hello</RoundButton> */}
                         <Trends />
 
                     </Grid>

@@ -4,8 +4,8 @@ import StaticPaper from './StaticPaper';
 import Anchor from "./Anchor";
 import CenterMe from "../CenterMe";
 import Interactive from 'react-interactive';
-import IconTwitter from "./../HComponents/IconTwitter";
 import DotSpacer from "./DotSpacer";
+import IconTwitter from "./../CustomComponent/IconTwitter";
 import reactStringReplace from 'react-string-replace';
 
 export default (props) => {

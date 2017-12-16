@@ -1,22 +1,11 @@
 import React from "react";
 import {
-    AppBar,
-    // Button,
-    // Toolbar,
-    Grid,
-    // Tab,
-    // Tabs,
-    // Icon,
-    // FormControl,
-    // Input,
-    // InputAdornment,
-    // Avatar
+    AppBar, Grid
 } from "material-ui";
 
 import TwitterIcon from "./Component/twitter.svg";
-// import { withStyles } from 'material-ui/styles';
-import HTabs from "./Component/HComponents/HTabs";
-import HToolBar from "./Component/HComponents/HToolBar";
+import HTabs from "./Component/HeaderComponents/HeaderTabs";
+import HToolBar from "./Component/HeaderComponents/HeaderToolBar";
 import CenterMe from "./Component/CenterMe";
 import MaxWContain from "./Component/MaxWContain";
 

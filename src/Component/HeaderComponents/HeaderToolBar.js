@@ -5,9 +5,9 @@ import {
 } from "material-ui";
 
 import CLabel from "../CLabel";
-import SearchBox from "./SearchBox";
-import UserData from "./../../testdata/user";
-import RoundButton from "./../TwitterComponent/RoundButton"
+import SearchBox from "../CustomComponent/SearchBox";
+import UserData from "../../testdata/user";
+import RoundButton from "../CustomComponent/RoundButton";
 
 export default (props) => {
 

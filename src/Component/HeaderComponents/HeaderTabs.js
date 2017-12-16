@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab, Tabs } from "material-ui";
 import CLabel from "../CLabel";
-import IconTwitter from "./IconTwitter";
+import IconTwitter from "../CustomComponent/IconTwitter";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import createMuiTheme from "material-ui/styles/createMuiTheme";
 import Button from "material-ui/Button/Button";

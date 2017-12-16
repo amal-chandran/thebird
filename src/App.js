@@ -1,12 +1,15 @@
 import React from "react";
-import Header from "./Header";
-import Body from "./Body";
+// import Header from "./Header";
+// import Body from "./Body";
 import { MuiThemeProvider, createMuiTheme } from "material-ui/styles";
 import { blue } from 'material-ui/colors';
+import green from "material-ui/colors/green";
+
+import { RoundButton } from "./Component/CustomComponent";
 
 let theme = createMuiTheme({
     palette: {
-        primary: blue
+        primary: green
     },
     typography: {
         fontFamily: "sans-serif",
@@ -29,8 +32,9 @@ class App extends React.Component {
         return (
             <MuiThemeProvider theme={theme}>
                 <div className="App">
-                    <Header />
-                    <Body />
+                    {/* <Header /> */}
+                    {/* <Body /> */}
+                    <RoundButton>Hello</RoundButton>
                 </div>
             </MuiThemeProvider>
         );
