@@ -11,6 +11,7 @@
     "react-autosuggest": "^9.3.2",
     "react-dom": "^16.2.0",
     "react-interactive": "^0.8.1",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "react-string-replace": "^0.4.1"
   },

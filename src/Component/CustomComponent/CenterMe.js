@@ -14,7 +14,7 @@ export default class CenterMe extends React.Component {
     }
     render() {
         let { style, ...Other } = this.props;
-        style = Object.assign(this.style.parent, style);
+        style = Object.assign({}, this.style.parent, style);
 
         return (<div {...Other} style={style}> {this.props.children}</div >);
     }

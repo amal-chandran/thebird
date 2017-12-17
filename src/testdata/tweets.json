@@ -25,5 +25,23 @@
             "./img/tweetimg/3.png"
         ],
         "content": "#Dev, explore intermediate #ASPdotnetcore concepts & skills with @ladynaggaga, @shanselman, @csharpfritz & @jongalloway http://msft.social/KWDbwA "
+    },
+    {
+        "id": "UIDAI",
+        "name": "Aadhaar‏",
+        "image": "./img/User4.jpg",
+        "images": [
+            "./img/tweetimg/4.jpg"
+        ],
+        "content": "Instantly operable bank account is now possible. Use Aadhaar based eKYC service to open a new account in a completely paperless manner. To know your own Aadhaar eKYC auth history, see - https://resident.uidai.gov.in/notification-aadhaar #AadhaarFacts"
+    },
+    {
+        "id": "UIDAI",
+        "name": "Aadhaar‏",
+        "image": "./img/User4.jpg",
+        "images": [
+            "./img/tweetimg/5.jpg"
+        ],
+        "content": "Aadhaar based e-KYC is a paperless and digital way of sharing KYC (Know Your Customer) information for any service. Know more about eKYC here-  https://www.egov-nsdl.co.in/e-kyc.html  #AadhaarFacts"
     }
 ]

@@ -6,13 +6,14 @@ import { IconTwitter, CLabel } from "./../CustomComponent";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import createMuiTheme from "material-ui/styles/createMuiTheme";
 import Button from "material-ui/Button/Button";
+import { Redirect, withRouter } from "react-router-dom";
 
-export default class HTabs extends React.Component {
+export default withRouter(class HTabs extends React.Component {
 
     constructor() {
         super();
         this.state = {
-            value: 0
+            value: '/home'
         };
         this.style = {
             tab: {
@@ -25,28 +26,43 @@ export default class HTabs extends React.Component {
         this.TabList = [
             {
                 icon: "homeFilled",
-                name: "Home"
+                name: "Home",
+                path: "/home"
             },
             {
                 icon: "lightning",
-                name: "Moments"
+                name: "Moments",
+                path: "/moments"
             },
             {
                 icon: "notifications",
-                name: "Notification"
+                name: "Notification",
+                path: "/notifications"
+
             },
             {
                 icon: "dm",
-                name: "Message"
+                name: "Message",
+                path: "/message"
+
             },
         ];
     }
+
     tabHandler = (e, v) => {
-        this.setState({ 'value': v });
+        let { props, state } = this, match = props.match;
+        // console.log(v, this.props.location.pathname)
+        if (this.props.location.pathname != v)
+            this.props.history.push(v);
+
+        this.setState({ value: v });
     }
 
-
-
+    componentWillUpdate(nextProps, nextState) {
+        nextState.value = nextProps.location.pathname;
+        //console.log(nextProps, nextState);
+        // console.log(this.TabList.filter((obj) => { return obj.path == this.state.value }).length);
+    }
     render() {
 
         return (
@@ -56,10 +72,12 @@ export default class HTabs extends React.Component {
                 textColor="primary"
                 scrollable scrollButtons="off"
                 onChange={this.tabHandler}
-                value={this.state.value}>
+                value={this.TabList.filter((obj) => { return obj.path == this.state.value }).length == 0 ? '/home' : this.state.value}
+            >
                 {
                     this.TabList.map((val, i) => (
                         <Tab key={i} style={this.style.tab}
+                            value={val.path}
                             label={<CLabel style={this.style.label}
                                 val={val.name}
                                 icon={<IconTwitter large='true' icon={val.icon}></IconTwitter>} />} />
@@ -70,4 +88,4 @@ export default class HTabs extends React.Component {
             // </MuiThemeProvider>
         );
     }
-}
+});

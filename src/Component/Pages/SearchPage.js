@@ -11,9 +11,18 @@ import {
 
 import { MaxWContain, StaticPaper } from "./../CustomComponent";
 import AppBar from "material-ui/AppBar/AppBar";
+import TweetsData from "./../../testdata/tweets";
+
 
 export default class Body extends React.Component {
     render() {
+        let { match } = this.props;
+        let query = match.params.query;
+
+        const escapedValue = query.trim();
+        const regex = new RegExp('^' + escapedValue, 'i');
+        let TweetCreatorIP = TweetsData.filter(tweetData => regex.test(tweetData.name));
+
         return (
             <div style={{ paddingTop: "46px" }}>
                 <div style={{ background: "#37ACF3" }}>
@@ -23,7 +32,7 @@ export default class Body extends React.Component {
                             padding: "16px",
                             paddingLeft: "0px",
                             color: "#fff"
-                        }}>React Js</h1>
+                        }}>{match.params.query}</h1>
 
                     </MaxWContain>
                 </div>
@@ -45,7 +54,7 @@ export default class Body extends React.Component {
                         </Grid>
                         <Grid item xs="6">
                             <StaticPaper>
-                                <TweetLoader></TweetLoader>
+                                <TweetLoader Tweets={TweetCreatorIP}></TweetLoader>
                             </StaticPaper>
                         </Grid>
                         <Grid item xs="3">

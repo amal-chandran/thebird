@@ -24,7 +24,7 @@ const styles = (theme) => {
 };
 
 export default withStyles(styles)((props) => {
-    console.log(props.classes.root);
+    // console.log(props.classes.root);
     return (
         <Button
             classes={{

@@ -5,12 +5,13 @@ import TweetsData from "./../../testdata/tweets";
 
 export default (props) => {
 
-    let { style, ...Other } = props;
+    let { style, Tweets, ...Other } = props;
 
+    Tweets = Tweets ? Tweets : TweetsData;
     return (
         <div style={style} {...Other}>
             {
-                TweetsData.map((dat, i) => (
+                Tweets.map((dat, i) => (
                     <Tweet key={i} fillData={dat} ></Tweet>
                 ))
             }

@@ -3,6 +3,12 @@ import {
     AppBar, Grid
 } from "material-ui";
 
+import {
+    BrowserRouter as Router,
+    Route,
+    Link, Redirect
+} from 'react-router-dom'
+
 import { CenterMe, MaxWContain } from "./../CustomComponent";
 import { HeaderTabs, HeaderToolBar } from "./../HeaderComponents";
 
@@ -30,6 +36,7 @@ class Header extends React.Component {
                             </Grid>
                             <Grid style={{ textAlign: 'center' }} sm={2} item>
                                 <CenterMe>
+
                                     <img style={{ height: "22px" }} src={TwitterIcon} alt="Logo" />
                                 </CenterMe>
                             </Grid>

@@ -14,12 +14,12 @@ import { MaxWContain, StaticPaper } from "./../CustomComponent";
 export default class Body extends React.Component {
     render() {
         return (
-            <MaxWContain style={{ paddingTop: "58px" }}>
+            <MaxWContain HeaderOver>
                 <Grid container justify="center" spacing={16}>
                     <Grid item xs="3">
 
                         <UserInfo />
-                        <Trends />
+                        <Trends notFirst />
 
                     </Grid>
                     <Grid item xs="6">
@@ -30,7 +30,7 @@ export default class Body extends React.Component {
                     </Grid>
                     <Grid item xs="3">
                         <Follow></Follow>
-                        <LinkBox></LinkBox>
+                        <LinkBox notFirst></LinkBox>
                     </Grid>
                 </Grid>
             </MaxWContain >

@@ -3,10 +3,10 @@ import { MuiThemeProvider, createMuiTheme } from "material-ui/styles";
 import { blue, blueGrey } from 'material-ui/colors';
 import green from "material-ui/colors/green";
 
-import { Header } from "./Component/Layout";
-import { HomePage, SearchPage } from "./Component/Pages";
+import Router from "./Router";
 
-console.log(blueGrey);
+
+// console.log(blueGrey);
 let theme = createMuiTheme({
     palette: {
         primary: blue,
@@ -53,10 +53,13 @@ class App extends React.Component {
         return (
             <MuiThemeProvider theme={theme}>
                 <div className="App">
-                    <Header></Header>
+                    {/* <Header></Header>
                     <SearchPage></SearchPage>
                     {/* <HomePage></HomePage> */}
-                    {/* <RoundButton>Hello</RoundButton> */}
+                    {/* <RoundButton>Hello</RoundButton>  */}
+                    <Router></Router>
+
+
                 </div>
             </MuiThemeProvider>
         );
