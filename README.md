@@ -2,7 +2,7 @@
 
 **Demo**
 
-**[Hosted Demo Page](http://https://adevcoco.github.io/twitter/)**
+**[Hosted Demo Page](https://adevcoco.github.io/twitter/)**
 
 
 **To Install**
