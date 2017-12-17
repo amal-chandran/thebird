@@ -55,7 +55,6 @@ class App extends React.Component {
                 <div className="App">
                     <Router></Router>
                     <SnackBar2></SnackBar2>
-
                 </div>
             </MuiThemeProvider>
         );
