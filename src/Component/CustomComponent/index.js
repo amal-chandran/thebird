@@ -10,10 +10,11 @@ import RoundButton from "./RoundButton";
 import RoundButton2 from "./RoundButton2";
 import SearchBox from "./SearchBox";
 import StaticPaper from "./StaticPaper";
+import SnackBar2 from "./SnackBar2";
 
 export {
     Anchor, AutoSuggest, CenterMe, CLabel, DotSpacer, IconTwitter,
     InteractiveAnchor, MaxWContain,
     RoundButton, RoundButton2,
-    SearchBox, StaticPaper
+    SearchBox, StaticPaper, SnackBar2
 };

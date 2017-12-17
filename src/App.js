@@ -4,7 +4,7 @@ import { blue, blueGrey } from 'material-ui/colors';
 
 import Router from "./Router";
 import green from "material-ui/colors/green";
-
+import { SnackBar2 } from "./Component/CustomComponent";
 
 // console.log(blueGrey);
 let theme = createMuiTheme({
@@ -53,12 +53,8 @@ class App extends React.Component {
         return (
             <MuiThemeProvider theme={theme}>
                 <div className="App">
-                    {/* <Header></Header>
-                    <SearchPage></SearchPage>
-                    {/* <HomePage></HomePage> */}
-                    {/* <RoundButton>Hello</RoundButton>  */}
                     <Router></Router>
-
+                    <SnackBar2></SnackBar2>
 
                 </div>
             </MuiThemeProvider>
