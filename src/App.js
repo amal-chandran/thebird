@@ -1,9 +1,9 @@
 import React from "react";
 import { MuiThemeProvider, createMuiTheme } from "material-ui/styles";
 import { blue, blueGrey } from 'material-ui/colors';
-import green from "material-ui/colors/green";
 
 import Router from "./Router";
+import green from "material-ui/colors/green";
 
 
 // console.log(blueGrey);

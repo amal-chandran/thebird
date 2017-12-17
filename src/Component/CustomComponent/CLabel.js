@@ -8,7 +8,7 @@ import CenterMe from "./CenterMe";
 
 export default class CLabel extends React.Component {
     render() {
-        let { ico, icon, val, style, ...Other } = this.props;
+        let { ico, icon, val, style } = this.props;
         return (
             <CenterMe>
                 {ico ? <Icon>{ico}</Icon> : ""}

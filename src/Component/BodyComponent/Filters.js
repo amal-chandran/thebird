@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid, Paper, Avatar, Typography } from "material-ui";
 
 import {
     StaticPaper, Anchor,
@@ -10,11 +9,7 @@ import Input from 'material-ui/Input/Input';
 import MenuItem from 'material-ui/Menu/MenuItem';
 import Animate from "react-animate-height";
 
-// import TrendsData from "../../testdata/trends";
-
-
 let styles = {
-    // staticpaper: { marginTop: "12px" },
     h1: {
         fontSize: '18px',
         fontWeight: 'bold'

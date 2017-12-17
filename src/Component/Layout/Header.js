@@ -3,12 +3,6 @@ import {
     AppBar, Grid
 } from "material-ui";
 
-import {
-    BrowserRouter as Router,
-    Route,
-    Link, Redirect
-} from 'react-router-dom'
-
 import { CenterMe, MaxWContain } from "./../CustomComponent";
 import { HeaderTabs, HeaderToolBar } from "./../HeaderComponents";
 

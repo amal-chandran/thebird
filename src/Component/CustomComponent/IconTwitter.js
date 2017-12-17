@@ -1,16 +1,19 @@
 
 import React from "react";
+import withTheme from "material-ui/styles/withTheme";
 
-export default (props) => {
-    let { medium, large, icon, ...Other } = props;
+export default withTheme()((props) => {
+    let { medium, large, icon, theme, style, ...Other } = props;
     let classList = "Icon ";
     classList += (medium) ? ' Icon--medium ' : '';
-    classList += (large) ? ' Icon--large ' : '';
     classList += (icon) ? ' Icon--' + icon + ' ' : '';
+    classList += (large) ? ' Icon--large ' : '';
+
+    style = Object.assign({}, { color: theme.palette.primary['500'] }, style)
 
     return (
-        <span {...Other} className={classList}></span>
+        <span style={style} {...Other} className={classList}></span>
     );
-};
+});
 
 

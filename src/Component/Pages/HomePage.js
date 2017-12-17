@@ -4,7 +4,7 @@ import { Grid } from "material-ui";
 import {
     UserInfo, Trends,
     TweetCreator,
-    TweetLoader, Tweet,
+    TweetLoader,
     Follow, LinkBox
 } from "../BodyComponent";
 

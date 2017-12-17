@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Avatar, Icon } from "material-ui";
+import { Grid, Avatar } from "material-ui";
 
 import {
     StaticPaper, Anchor,
@@ -7,11 +7,10 @@ import {
     IconTwitter
 } from "./../CustomComponent";
 
-import Interactive from 'react-interactive';
 import reactStringReplace from 'react-string-replace';
 
 export default (props) => {
-    let { style, fillData, ...Other } = props;
+    let { style, fillData } = props;
     let styles = {
         avatarWidth: '42px',
         avatar: { margin: "10px", marginTop: '4px', height: this.avatarWidth, width: this.avatarWidth },
@@ -75,7 +74,7 @@ const TextBoxContain = (props) => (
                     style={{ paddingRight: '20px' }} hover={{ 'color': val.Color }}>
 
                     <CenterMe>
-                        <IconTwitter medium='true' icon={val.Icon}></IconTwitter>
+                        <IconTwitter style={{ color: "inhert" }} medium='true' icon={val.Icon}></IconTwitter>
                         <span style={{ padding: '0 4px' }}>{Math.floor(Math.random() * 30) + 1}</span>
                     </CenterMe>
                 </Anchor>
@@ -97,7 +96,7 @@ const ImgContain = (props) => (
             border: "1px solid gray",
             borderRadius: "9px",
             boxSizing: "border-box"
-        }}
+        }} alt="Loading ..."
             src={props.image} alt="Post Image" />
     </span>
 );

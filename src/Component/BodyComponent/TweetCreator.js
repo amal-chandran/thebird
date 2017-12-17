@@ -6,15 +6,15 @@ import {
 } from "material-ui";
 
 import {
-    StaticPaper,
     IconTwitter,
     RoundButton
 } from "./../CustomComponent";
 
 import Interactive from 'react-interactive';
 import UserData from "./../../testdata/user";
+import withTheme from "material-ui/styles/withTheme";
 
-export default class TweetCreator extends React.Component {
+class TweetCreator extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -27,10 +27,10 @@ export default class TweetCreator extends React.Component {
 
     }
     render() {
-
+        let { theme } = this.props;
         let styles = {
             container: {
-                background: "#E8F5FD",
+                background: theme.palette.primary['50'],
                 padding: '12px',
                 border: '1px solid #e6ecf0'
             },
@@ -45,7 +45,7 @@ export default class TweetCreator extends React.Component {
                 width: "92%",
                 position: 'relative'
             }, textarea: {
-                border: '1px solid #A4D9F9',
+                border: '1px solid ' + theme.palette.primary['200'],
                 borderRadius: '10px',
                 width: "100%",
                 resize: 'none',
@@ -55,7 +55,7 @@ export default class TweetCreator extends React.Component {
                 boxSizing: 'border-box',
                 background: '#fff'
             }, textareaActive: {
-                border: '2px solid #A4D9F9',
+                border: '2px solid ' + theme.palette.primary['200'],
                 minHeight: "105px"
             }
         }
@@ -72,7 +72,7 @@ export default class TweetCreator extends React.Component {
                             <span style={{
                                 position: 'absolute',
                                 top: '12px',
-                                color: '#1DA1F2'
+                                color: theme.palette.primary['500']
                             }}>What's happening ?</span>}
                         <TextField
                             fullWidth
@@ -174,3 +174,5 @@ let ControllPanel = (props) => {
         </div>
     );
 };
+
+export default withTheme()(TweetCreator);

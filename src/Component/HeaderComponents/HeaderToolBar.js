@@ -5,7 +5,7 @@ import {
 } from "material-ui";
 
 import UserData from "../../testdata/user";
-import { CLabel, SearchBox, RoundButton } from "./../CustomComponent";
+import { SearchBox, RoundButton } from "./../CustomComponent";
 
 
 export default (props) => {

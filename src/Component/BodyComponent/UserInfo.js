@@ -1,20 +1,19 @@
 import React from 'react';
-import { Grid, Paper, Avatar } from "material-ui";
+import { Grid, Avatar } from "material-ui";
 
 import {
     Anchor,
     StaticPaper
 } from "./../CustomComponent";
 
-import Interactive from "react-interactive";
 import UserData from "./../../testdata/user";
-
-export default (props) => {
+import withTheme from 'material-ui/styles/withTheme';
+let UserInfo = (props) => {
     const avatarSize = '72px';
-
+    let { theme } = props;
     let styles = {
         cover: {
-            background: '#1DA1F2',
+            background: theme.palette.primary['500'],
             height: '95px'
         }, avatar: {
             height: avatarSize,
@@ -37,7 +36,7 @@ export default (props) => {
             padding: '0px 24px 7px 17px',
             height: '49px'
         }, netInfoData: {
-            color: '#1DA1F2',
+            color: theme.palette.primary['500'],
             fontSize: '18px',
             fontWeight: 'bold'
         }
@@ -98,3 +97,6 @@ export default (props) => {
         </Grid>
     </StaticPaper>);
 };
+
+
+export default withTheme()(UserInfo);

@@ -1,13 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Autosuggest from 'react-autosuggest';
 import match from 'autosuggest-highlight/match';
-import parse from 'autosuggest-highlight/parse';
-import TextField from 'material-ui/TextField';
-import Paper from 'material-ui/Paper';
 import { MenuItem } from 'material-ui/Menu';
 import { withStyles } from 'material-ui/styles';
-import { withRouter, Redirect } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 import { Anchor } from "./../CustomComponent";
 
@@ -17,7 +13,7 @@ import seachdata from "./../../testdata/searchdata";
 
 
 function renderInput(inputProps) {
-    const { classes, autoFocus, value, ref, ...other } = inputProps;
+    const { classes, autoFocus, value } = inputProps;
 
     return (
         <input
@@ -60,8 +56,6 @@ function shouldRenderSuggestions() {
 }
 
 function renderSuggestion(suggestion, { query, isHighlighted }) {
-    const matches = match(suggestion.label, query);
-    const parts = parse(suggestion.label, matches);
 
     return (
         <MenuItem style={{
@@ -70,9 +64,9 @@ function renderSuggestion(suggestion, { query, isHighlighted }) {
             height: "48px"
         }} selected={isHighlighted} component="div">
             <div>
-                {/* <Anchor noLink subFont mainColor normalFloat> */}
-                {suggestion.name}
-                {/* </Anchor> */}
+                <Anchor noLink subFont mainColor normalFloat>
+                    {suggestion.name}
+                </Anchor>
             </div>
         </MenuItem>
     );
@@ -86,7 +80,7 @@ class App extends React.Component {
             value: '',
             suggestions: [],
             noSuggestions: true,
-            isEmptyInput: true, query: "", selected: false
+            isEmptyInput: true, selected: false
         };
     }
 
@@ -180,7 +174,7 @@ class App extends React.Component {
     };
 
     render() {
-        const { value, suggestions, query } = this.state;
+        const { value, suggestions } = this.state;
 
         // Check This Out
         const inputProps = {

@@ -2,7 +2,7 @@ import React from "react";
 
 import {
     List, ListItem, Avatar,
-    ListItemText, Divider, Icon
+    ListItemText, Divider
 } from "material-ui";
 
 import {

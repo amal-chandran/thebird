@@ -2,21 +2,20 @@ import React from "react";
 import { Grid } from "material-ui";
 
 import {
-    UserInfo, Trends,
-    TweetCreator,
-    TweetLoader, Tweet,
+    Trends,
+    TweetLoader,
     Follow, Filters, LinkBox,
     SearchTabs, RelatedResults
 } from "../BodyComponent";
 
 import { MaxWContain, StaticPaper } from "./../CustomComponent";
-import AppBar from "material-ui/AppBar/AppBar";
 import TweetsData from "./../../testdata/tweets";
+import withTheme from "material-ui/styles/withTheme";
 
 
-export default class Body extends React.Component {
+class SearchPage extends React.Component {
     render() {
-        let { match } = this.props;
+        let { match, theme } = this.props;
         let query = match.params.query;
 
         const escapedValue = query.trim();
@@ -25,7 +24,7 @@ export default class Body extends React.Component {
 
         return (
             <div style={{ paddingTop: "46px" }}>
-                <div style={{ background: "#37ACF3" }}>
+                <div style={{ background: theme.palette.primary['500'] }}>
                     <MaxWContain>
                         <h1 style={{
                             margin: "0px",
@@ -66,3 +65,5 @@ export default class Body extends React.Component {
         );
     }
 }
+
+export default withTheme()(SearchPage);

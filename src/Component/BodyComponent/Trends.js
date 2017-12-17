@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid, Paper, Avatar, Typography } from "material-ui";
 
 import {
     StaticPaper, Anchor,

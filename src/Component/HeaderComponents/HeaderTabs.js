@@ -3,10 +3,7 @@ import { Tab, Tabs } from "material-ui";
 
 import { IconTwitter, CLabel } from "./../CustomComponent";
 
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import createMuiTheme from "material-ui/styles/createMuiTheme";
-import Button from "material-ui/Button/Button";
-import { Redirect, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 export default withRouter(class HTabs extends React.Component {
 
@@ -50,10 +47,10 @@ export default withRouter(class HTabs extends React.Component {
     }
 
     tabHandler = (e, v) => {
-        let { props, state } = this, match = props.match;
+        let { props } = this;
         // console.log(v, this.props.location.pathname)
-        if (this.props.location.pathname != v)
-            this.props.history.push(v);
+        if (props.location.pathname != v)
+            props.history.push(v);
 
         this.setState({ value: v });
     }
@@ -80,7 +77,7 @@ export default withRouter(class HTabs extends React.Component {
                             value={val.path}
                             label={<CLabel style={this.style.label}
                                 val={val.name}
-                                icon={<IconTwitter large='true' icon={val.icon}></IconTwitter>} />} />
+                                icon={<IconTwitter style={{ color: "inhert" }} large='true' icon={val.icon}></IconTwitter>} />} />
                     ))
                 }
 

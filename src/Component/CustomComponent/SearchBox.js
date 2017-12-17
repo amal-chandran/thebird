@@ -1,14 +1,10 @@
 import React from "react";
 
 import {
-  Anchor,
   AutoSuggest,
   CenterMe,
   IconTwitter
 } from "./index";
-
-import { Icon } from "material-ui";
-import Tooltip from "rc-tooltip";
 
 const styles = {
   input: {

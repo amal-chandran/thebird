@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab, Tabs } from "material-ui";
 
-import { IconTwitter, CLabel } from "./../CustomComponent";
+import { CLabel } from "./../CustomComponent";
 
 export default class HTabs extends React.Component {
 

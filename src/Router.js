@@ -1,8 +1,7 @@
 import React from "react";
 import {
     MemoryRouter as Router,
-    Route,
-    Link, Redirect, Switch
+    Route, Redirect
 } from 'react-router-dom'
 
 import { Header } from "./Component/Layout";

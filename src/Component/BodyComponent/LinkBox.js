@@ -1,7 +1,6 @@
 import React from "react";
 import {
-    List, ListItem, Avatar,
-    ListItemText, Divider, Icon
+    Divider
 } from "material-ui";
 
 
