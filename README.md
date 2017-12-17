@@ -5,7 +5,7 @@
 Install Node v6.11.0(Recomented) / Stable
 
 ```shell
-git clone https://github.com/adevofficial/thebird.git <br/>
+git clone https://github.com/adevofficial/thebird.git
 npm install
 npm start
 ```
